@@ -1,0 +1,13 @@
+import random
+import string
+
+print("welcome to randrom password generator")
+randomchar=string.ascii_letters+string.digits+string.punctuation
+npwd=int(input("enter the no of password yuu want to generate:"))
+len=int(input("enter the length of the each password:"))
+print("here are the auto generated passwords:")
+for i in range(npwd):
+    pwd=" "
+    for j in range(len):
+        pwd=pwd+random.choice(randomchar)
+    print(pwd)
